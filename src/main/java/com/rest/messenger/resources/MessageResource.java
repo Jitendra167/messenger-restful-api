@@ -35,7 +35,7 @@ public class MessageResource {
 	public List<Message> getJsonMessages(@QueryParam("year") int year, 
 			                         @QueryParam("start") int start, 
 			                         @QueryParam("size") int size) {
-		System.out.println("getMessages fired");
+		System.out.println("getJsonMessages fired");
 		if(year > 0) {
 			return messageService.getAllmessagesForYear(year);
 		}
@@ -54,7 +54,7 @@ public class MessageResource {
 	public List<Message> getXmlMessages(@QueryParam("year") int year, 
 			                         @QueryParam("start") int start, 
 			                         @QueryParam("size") int size) {
-		System.out.println("getMessages fired");
+		System.out.println("getXmlMessages fired");
 		if(year > 0) {
 			return messageService.getAllmessagesForYear(year);
 		}
